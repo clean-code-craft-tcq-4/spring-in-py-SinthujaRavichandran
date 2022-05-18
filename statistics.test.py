@@ -21,7 +21,7 @@ class StatsTest(unittest.TestCase):
     self.assertTrue(math.isnan(computedStats["max"]))
     # Use nan and isnan in https://docs.python.org/3/library/math.html
     
-'''
+
   def test_raise_alerts_when_max_above_threshold(self):
     emailAlert = EmailAlert()
     ledAlert = LEDAlert()
@@ -30,6 +30,6 @@ class StatsTest(unittest.TestCase):
     statsAlerter.checkAndAlert([22.6, 12.5, 3.7])
     self.assertTrue(emailAlert.emailSent)
     self.assertTrue(ledAlert.ledGlows)
-'''
+
 if __name__ == "__main__":
   unittest.main()
